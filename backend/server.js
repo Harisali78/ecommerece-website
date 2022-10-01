@@ -20,7 +20,7 @@ const server = app.listen(process.env.PORT, () => {
   );
 });
 
-// Unhandled Promis Rejection
+// Unhandled Promise Rejection
 process.on("unhandledRejection", (err) => {
   console.log(`Error : ${err.message}`);
   console.log(`Shutting down the server due to Unhandled Promise Rejection`);
